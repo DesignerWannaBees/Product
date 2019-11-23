@@ -14,24 +14,16 @@ class ChallengesTableViewController2: UITableViewController {
     
     var challengesArray =  [Challenge]()
     
-    let walking = Challenge(imageName: "walk-icon", quickImage: "quick-walk-icon", title: "first steps", description: "Just 30 minutes every day can increase cardiovascular fitness, strengthen bones, reduce excess body fat, and boost muscle power and endurance. It can also reduce your risk of developing conditions such as heart disease, type 2 diabetes, osteoporosis and some cancers.")
-    
-    let running = Challenge(imageName: "run-icon", quickImage: "quick-run-icon",title: "pick up the pace", description: "Jogging or running is a popular form of physical activity. About one in five Australians try running (or jogging) at some stage in their life. Running is an appealing exercise because it doesn't cost a lot to take part and you can run at any time that suits you.")
-    
-    let hiking = Challenge(imageName: "hike-icon", quickImage: "quick-hike-icon",title: "hit the hills", description: "You can burn an extra 60% more calories walking up hill than on the flat. There are so many amazing benefits to walking up hill, such as promoting health and fighting inflammation.You can also burn as many calories walking up hill as you would if you jogged on the flat for the same period of time.")
-
-    let cycling = Challenge(imageName: "cycle-icon", quickImage: "quick-cycle-icon",title: "life cycle", description: "Riding your bicycle regularly is one of the best ways to reduce your risk of health problems associated with a sedentary lifestyle. Cycling is a healthy, low-impact exercise that can be enjoyed by people of all ages, from young children to older adults. It is also fun, cheap and good for the environment.")
-    let stairs = Challenge(imageName: "stairs-icon", quickImage: "quick-stairs-icon",title: "stairs challenge", description: "Climbing stairs is one of the best exercises when it comes to pure FAT BURN, strengthening the lower body, toning the butt, thighs, calves, losing inches from those love handles and belly as well as building great abs. Along with these benefits, it is the immense good it does for your lungs and cardiovascular system.")
-    let interval = Challenge(imageName: "clock-icon", quickImage: "quick-clock-icon",title: "beat the clock", description: "Interval training, alternating bursts of speed with longer recovery intervals, is now considered a beneficial exercise for more than just athletes. Interval training can consist of bursts of speed for a set amount of time or for a distance.")
-    
+    let walking = Challenge(imageName: "walk-icon", title: "Walking", description: "something about walking")
+    let running = Challenge(imageName: "run-icon", title: "Running", description: "something about running")
+    let hiking = Challenge(imageName: "hike-icon", title: "Hiking", description: "something about hiking")
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
         // Register the table view cell class and its reuse id
-       // self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
-       // self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "customTVC")
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
        
     }
     
@@ -40,9 +32,6 @@ class ChallengesTableViewController2: UITableViewController {
         challengesArray.append(walking)
         challengesArray.append(running)
         challengesArray.append(hiking)
-        challengesArray.append(stairs)
-        challengesArray.append(cycling)
-        challengesArray.append(interval)
         
     }
 
@@ -60,34 +49,24 @@ class ChallengesTableViewController2: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "customTVC", for: indexPath) as! CustomChallengesCell
-//        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)
-        let identifier = "custom"
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! ChallengeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)
 
-        var cell: CustomChallengesCell! = tableView.dequeueReusableCell(withIdentifier: identifier) as? CustomChallengesCell
-
-           if cell == nil {
-            tableView.register(UINib(nibName: "CustomChallengesCell", bundle: nil), forCellReuseIdentifier: identifier)
-            cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? CustomChallengesCell
-             }
-        
         // Configure the cell...
         // set the text from the data model
         let challenge = challengesArray[indexPath.row]
-        let challengeNumber = "challenge 0\(indexPath.row + 1)"
+        cell?.textLabel?.text = challenge.title
+        cell?.textLabel?.textColor = UIColor.systemIndigo
         
-        cell.descriptionLabel.text = challenge.description
-        cell.iconImageView.image = UIImage(named: challenge.imageName)
-        cell.titleLabel.text = challenge.title
-        cell.challengeNumberLabel.text = challengeNumber.uppercased()
+        cell?.imageView?.image = UIImage(named: challenge.imageName)
+        cell?.textLabel?.font = UIFont(name: "Helvetica", size: 16)
         
-        
-        return cell
+        return cell!
     }
     
    override func tableView(_ tableView: UITableView,
                    heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 80
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
