@@ -28,9 +28,9 @@ class QuickStartViewController: UIViewController {
         super.viewWillAppear(animated)
         
         if quickstartChallenge != nil {
-            iconImageView.image = UIImage(named: quickstartChallenge.quickImage)
+            iconImageView.image = UIImage(named: quickstartChallenge.imageName)
         } else {
-             iconImageView.image = #imageLiteral(resourceName: "quick-walk-icon")
+             iconImageView.image = UIImage(named: "walk-icon")
         }
     }
     @IBAction func tapWideStartButton(_ sender: Any) {
@@ -45,7 +45,7 @@ class QuickStartViewController: UIViewController {
     
     @IBAction func triggerCongratulationsModal(_ sender: Any) {
         
-        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "congratsVC2") as? CongratsViewController
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "congratsVC") as? CongratulationsViewController
         {
             present(vc, animated: true, completion: nil)
         }

@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		56A9C9B7238015F900210744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9C9B6238015F900210744 /* AppDelegate.swift */; };
 		56A9C9B9238015F900210744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9C9B8238015F900210744 /* SceneDelegate.swift */; };
-		56A9C9BB238015F900210744 /* CongratsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9C9BA238015F900210744 /* CongratsViewController.swift */; };
+		56A9C9BB238015F900210744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A9C9BA238015F900210744 /* ViewController.swift */; };
 		56A9C9BE238015F900210744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A9C9BC238015F900210744 /* Main.storyboard */; };
 		56A9C9C0238015FA00210744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A9C9BF238015FA00210744 /* Assets.xcassets */; };
 		56A9C9C3238015FA00210744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A9C9C1238015FA00210744 /* LaunchScreen.storyboard */; };
 		56C3450E2381A976004FCF68 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3450D2381A976004FCF68 /* data.swift */; };
+		56C345122381B1FE004FCF68 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C345112381B1FE004FCF68 /* ChallengeTableViewCell.swift */; };
 		C8C43B9B23855203000D02E5 /* QuickStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43B9A23855203000D02E5 /* QuickStartViewController.swift */; };
 		C8C43B9D23855E66000D02E5 /* ChallengeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43B9C23855E66000D02E5 /* ChallengeDetailsViewController.swift */; };
+		C8C43B9F23857B84000D02E5 /* ChallengesTableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43B9E23857B84000D02E5 /* ChallengesTableViewController2.swift */; };
 		C8C43BA123857BE4000D02E5 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43BA023857BE4000D02E5 /* Challenge.swift */; };
 		C8C43BA823859496000D02E5 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43BA723859496000D02E5 /* RewardsViewController.swift */; };
 		C8C43BAB23859B20000D02E5 /* CustomChallengesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43BA923859B20000D02E5 /* CustomChallengesCell.swift */; };
@@ -23,21 +25,23 @@
 		C8C43BAF2385A02A000D02E5 /* CustomRewardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43BAD2385A02A000D02E5 /* CustomRewardsCell.swift */; };
 		C8C43BB02385A02A000D02E5 /* CustomRewardsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8C43BAE2385A02A000D02E5 /* CustomRewardsCell.xib */; };
 		C8C43BB22385AAC0000D02E5 /* QRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43BB12385AAC0000D02E5 /* QRCodeController.swift */; };
-		C8C43BB723881305000D02E5 /* ChallengesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43BB623881305000D02E5 /* ChallengesTableViewController.swift */; };
+		C8C43BB5238679B8000D02E5 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C43BB4238679B8000D02E5 /* CongratulationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56A9C9B3238015F900210744 /* fireworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fireworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A9C9B6238015F900210744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A9C9B8238015F900210744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		56A9C9BA238015F900210744 /* CongratsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsViewController.swift; sourceTree = "<group>"; };
+		56A9C9BA238015F900210744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		56A9C9BD238015F900210744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56A9C9BF238015FA00210744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56A9C9C2238015FA00210744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56A9C9C4238015FA00210744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C3450D2381A976004FCF68 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		56C345112381B1FE004FCF68 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		C8C43B9A23855203000D02E5 /* QuickStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartViewController.swift; sourceTree = "<group>"; };
 		C8C43B9C23855E66000D02E5 /* ChallengeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetailsViewController.swift; sourceTree = "<group>"; };
+		C8C43B9E23857B84000D02E5 /* ChallengesTableViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesTableViewController2.swift; sourceTree = "<group>"; };
 		C8C43BA023857BE4000D02E5 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		C8C43BA723859496000D02E5 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		C8C43BA923859B20000D02E5 /* CustomChallengesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChallengesCell.swift; sourceTree = "<group>"; };
@@ -45,7 +49,7 @@
 		C8C43BAD2385A02A000D02E5 /* CustomRewardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRewardsCell.swift; sourceTree = "<group>"; };
 		C8C43BAE2385A02A000D02E5 /* CustomRewardsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomRewardsCell.xib; sourceTree = "<group>"; };
 		C8C43BB12385AAC0000D02E5 /* QRCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeController.swift; sourceTree = "<group>"; };
-		C8C43BB623881305000D02E5 /* ChallengesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesTableViewController.swift; sourceTree = "<group>"; };
+		C8C43BB4238679B8000D02E5 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			children = (
 				56A9C9B6238015F900210744 /* AppDelegate.swift */,
 				56A9C9B8238015F900210744 /* SceneDelegate.swift */,
+				56A9C9BA238015F900210744 /* ViewController.swift */,
 				C8C43BA52385943B000D02E5 /* Models */,
 				C8C43BA423859424000D02E5 /* Controllers */,
 				56A9C9BF238015FA00210744 /* Assets.xcassets */,
@@ -99,22 +104,23 @@
 			path = QuickStartControllers;
 			sourceTree = "<group>";
 		};
-		C8C43BA32385940C000D02E5 /* ChallengesTableViewControllers */ = {
+		C8C43BA32385940C000D02E5 /* ChallengesControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C8C43BB623881305000D02E5 /* ChallengesTableViewController.swift */,
+				C8C43B9E23857B84000D02E5 /* ChallengesTableViewController2.swift */,
+				C8C43B9C23855E66000D02E5 /* ChallengeDetailsViewController.swift */,
+				56C345112381B1FE004FCF68 /* ChallengeTableViewCell.swift */,
 				C8C43BA923859B20000D02E5 /* CustomChallengesCell.swift */,
 				C8C43BAA23859B20000D02E5 /* CustomChallengesCell.xib */,
 			);
-			path = ChallengesTableViewControllers;
+			path = ChallengesControllers;
 			sourceTree = "<group>";
 		};
 		C8C43BA423859424000D02E5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				C8C43BA2238593F9000D02E5 /* QuickStartControllers */,
-				C8C43BA32385940C000D02E5 /* ChallengesTableViewControllers */,
-				C8C43BB82388144C000D02E5 /* ChallengesDetailsViewController */,
+				C8C43BA32385940C000D02E5 /* ChallengesControllers */,
 				C8C43BA62385945A000D02E5 /* RewardsControllers */,
 				C8C43BB32386798F000D02E5 /* CongratulationsControllers */,
 			);
@@ -143,17 +149,9 @@
 		C8C43BB32386798F000D02E5 /* CongratulationsControllers */ = {
 			isa = PBXGroup;
 			children = (
-				56A9C9BA238015F900210744 /* CongratsViewController.swift */,
+				C8C43BB4238679B8000D02E5 /* CongratulationsViewController.swift */,
 			);
 			path = CongratulationsControllers;
-			sourceTree = "<group>";
-		};
-		C8C43BB82388144C000D02E5 /* ChallengesDetailsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C8C43B9C23855E66000D02E5 /* ChallengeDetailsViewController.swift */,
-			);
-			path = ChallengesDetailsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,14 +227,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A9C9BB238015F900210744 /* CongratsViewController.swift in Sources */,
+				56A9C9BB238015F900210744 /* ViewController.swift in Sources */,
 				56A9C9B7238015F900210744 /* AppDelegate.swift in Sources */,
 				C8C43B9B23855203000D02E5 /* QuickStartViewController.swift in Sources */,
-				C8C43BB723881305000D02E5 /* ChallengesTableViewController.swift in Sources */,
+				C8C43B9F23857B84000D02E5 /* ChallengesTableViewController2.swift in Sources */,
+				C8C43BB5238679B8000D02E5 /* CongratulationsViewController.swift in Sources */,
 				56A9C9B9238015F900210744 /* SceneDelegate.swift in Sources */,
 				C8C43BAF2385A02A000D02E5 /* CustomRewardsCell.swift in Sources */,
 				C8C43BA823859496000D02E5 /* RewardsViewController.swift in Sources */,
 				C8C43BAB23859B20000D02E5 /* CustomChallengesCell.swift in Sources */,
+				56C345122381B1FE004FCF68 /* ChallengeTableViewCell.swift in Sources */,
 				56C3450E2381A976004FCF68 /* data.swift in Sources */,
 				C8C43BB22385AAC0000D02E5 /* QRCodeController.swift in Sources */,
 				C8C43B9D23855E66000D02E5 /* ChallengeDetailsViewController.swift in Sources */,
@@ -385,7 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64NY4V9RTQ;
+				DEVELOPMENT_TEAM = 5DB2W8GSC2;
 				INFOPLIST_FILE = fireworks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -403,7 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64NY4V9RTQ;
+				DEVELOPMENT_TEAM = 5DB2W8GSC2;
 				INFOPLIST_FILE = fireworks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
