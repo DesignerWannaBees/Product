@@ -16,8 +16,11 @@ class CongratsViewController: UIViewController {
     @IBOutlet weak var trophyEmoji: UILabel!
     @IBOutlet weak var successMessage: UILabel!
     @IBOutlet weak var faceEmoji: UILabel!
+<<<<<<< HEAD
     @IBOutlet weak var downButton: UIButton!
     @IBOutlet weak var chevronImage: UIImageView!
+=======
+>>>>>>> master
     
     
     override func viewDidLoad() {
@@ -27,8 +30,11 @@ class CongratsViewController: UIViewController {
         successMessage.layer.zPosition = 1
         faceEmoji.layer.zPosition = 1
         trophyEmoji.layer.zPosition = 1
+<<<<<<< HEAD
         chevronImage.layer.zPosition = 1
         downButton.layer.zPosition = 1
+=======
+>>>>>>> master
         doConfetti()
     }
 
@@ -156,9 +162,12 @@ class CongratsViewController: UIViewController {
 
     }
 
+<<<<<<< HEAD
     @IBAction func dismissModal(_ sender: UIButton) {
         print("View will dismiss")
         self.dismiss(animated: true, completion: nil)
     }
+=======
+>>>>>>> master
 }
 
