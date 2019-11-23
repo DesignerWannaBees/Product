@@ -10,6 +10,8 @@ import UIKit
 
 class CustomChallengesCell: UITableViewCell {
 
+<<<<<<< HEAD
+=======
     
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var challengeNumberLabel: UILabel!
@@ -17,6 +19,7 @@ class CustomChallengesCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
+>>>>>>> master
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -20,7 +20,10 @@ class ChallengeDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+<<<<<<< HEAD
+=======
         
+>>>>>>> master
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,7 +33,19 @@ class ChallengeDetailsViewController: UIViewController {
     
         if challenge != nil {
             imageView.image = UIImage(named: challenge.headerImageName)
+<<<<<<< HEAD
+            textView.text = challenge.description
+          //  textView.font?.withSize(16)
+            //sf pro display
+            textView.textColor = UIColor.systemGray
+            
+        } else {
+            textView.text = "technical errors"
         }
+        
+=======
+        }
+>>>>>>> master
     }
     
     @IBAction func goToQuickStart(_ sender: UIButton) {

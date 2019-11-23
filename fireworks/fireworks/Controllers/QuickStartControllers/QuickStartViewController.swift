@@ -61,6 +61,8 @@ class QuickStartViewController: UIViewController, ImprovedStepCounterDelegate {
             iconImageView.image = UIImage(named: quickstartChallenge.quickImage)
         } else {
              iconImageView.image = #imageLiteral(resourceName: "quick-walk-icon")
+<<<<<<< HEAD
+=======
         }
     }
     
@@ -112,6 +114,7 @@ class QuickStartViewController: UIViewController, ImprovedStepCounterDelegate {
                 self.PEDOMETER.stopUpdates()
                 self.showCongratulationsModal()
             }
+>>>>>>> master
         }
     }
     @IBAction func tapWideStartButton(_ sender: Any) {
@@ -125,16 +128,22 @@ class QuickStartViewController: UIViewController, ImprovedStepCounterDelegate {
     }
     
     @IBAction func triggerCongratulationsModal(_ sender: Any) {
+<<<<<<< HEAD
+        
+=======
         showCongratulationsModal()
     }
     
     func showCongratulationsModal() {
+>>>>>>> master
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "congratsVC2") as? CongratsViewController
         {
             present(vc, animated: true, completion: nil)
         }
     }
     
+<<<<<<< HEAD
+=======
     func stepAccurate() {
         let stepRemainingNow = Int(stepsRemaining.text!)! - 1
         
@@ -151,4 +160,5 @@ class QuickStartViewController: UIViewController, ImprovedStepCounterDelegate {
         }
      }
     
+>>>>>>> master
 }
