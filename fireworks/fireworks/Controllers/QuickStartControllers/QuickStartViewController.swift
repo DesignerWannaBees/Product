@@ -145,9 +145,9 @@ class QuickStartViewController: UIViewController, ImprovedStepCounterDelegate {
         } else {
             improvedSC.stopAccMeter()
             showCongratulationsModal()
-            stepsRemaining.text = String(Int(STEP_GOAL))
-            progressBar.setProgressWithAnimation(duration: 1.0, value: 0.0)
-            stepsDone = 0.0
+//            stepsRemaining.text = String(Int(STEP_GOAL))
+//            progressBar.setProgressWithAnimation(duration: 1.0, value: 0.0)
+//            stepsDone = 0.0
         }
      }
     
