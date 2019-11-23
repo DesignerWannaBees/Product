@@ -105,11 +105,11 @@ class RewardsViewController: UICollectionViewController, UICollectionViewDelegat
     //Mark: - FLowLayout Delegate Functions
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = 160
-        return CGSize(width: width, height: (width + 20) )
+        return CGSize(width: width, height: width )
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 25, left: 25, bottom: 25, right: 25)
+        return UIEdgeInsets(top: 0, left: 30, bottom: 0, right: 30)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

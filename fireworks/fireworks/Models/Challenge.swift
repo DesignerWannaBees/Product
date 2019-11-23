@@ -10,6 +10,8 @@ import UIKit
 
 struct Challenge {
     let imageName : String
+    let quickImage : String
     let title : String
     let description  : String
+    let headerImageName : String
 }
